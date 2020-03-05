@@ -75,7 +75,8 @@ namespace cuestionario
             // Almacenar el valor introducido por el cliente el la variable salary
             salary = Convert.ToDouble(Console.ReadLine());
 
-
+            //Esperar para que no se cierre la consola
+            Console.ReadKey();
         }
     }
 }
