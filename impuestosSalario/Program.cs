@@ -27,19 +27,19 @@ namespace impuestosSalario
             if (salarioAnual >= 399923.01 && salarioAnual <= 599884.00) 
             {
 
-                //Si el salario anual es mayor o igual a 399,923.01 hasta 599,884.00 la tasa de impuestos es de 15% de ese monto
-                impuestoISR = salarioAnual * 0.15;
+                //Si el salario anual es mayor o igual a 399,923.01 hasta 599,884.00 la tasa de impuestos es de 15% del excedente de 399,923.01
+                impuestoISR = (salarioAnual - 399923.01) * 0.15;
 
             } 
             else if (salarioAnual >= 599884.01 && salarioAnual <= 883171.00) 
             {
-                //Si el salario anual es mayor o igual a 599,884.01 hasta 883,171.00 la tasa de impuestos es de 20,994.00 mas el 20% del sueldo anual
-                impuestoISR = 29994.00 + (salarioAnual * 0.20);
+                //Si el salario anual es mayor o igual a 599,884.01 hasta 883,171.00 la tasa de impuestos es de 29,994.00 mas el 20% del excedente de 599,884.01
+                impuestoISR = 29994.00 + ((salarioAnual - 599884.01) * 0.20);
             }
             else if (salarioAnual >= 883171.01)
             {
-                //Si el salario anual es mayor o igual a 883,171.00 la tasa de impuestos es de 76,652.00 mas el 25% del sueldo anual
-                impuestoISR = 76652.00 + (salarioAnual * 0.25);
+                //Si el salario anual es mayor o igual a 883,171.01 la tasa de impuestos es de 76,652.00 mas el 25% del excedente de 883,171.01
+                impuestoISR = 76652.00 + ((salarioAnual - 883171.01) * 0.25);
             }
 
             //Imprimir resultado en pantalla
