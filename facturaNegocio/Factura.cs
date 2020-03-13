@@ -16,10 +16,10 @@ namespace facturaNegocio
         public Factura(string noPieza, string descPieza, int cantidad, double precioUnd) 
         {
             /* Asignacion de los atributos por valor en los parametros del constructor de la clase */
-            this.noPieza = noPieza;
-            this.descPieza = descPieza;
-            this.cantidad = cantidad;
-            this.precioUnd = precioUnd;
+            NoPieza = noPieza;
+            DescPieza = descPieza;
+            Cantidad = cantidad;
+            PrecioUnd = precioUnd;
         }
 
         /* Metodo para leer y acceder al atributo noPieza */
