@@ -7,7 +7,7 @@ namespace PuntajeRespuestas
         static void Main(string[] args)
         {
             /* Declaracion de variables */
-            double pf, rc, ri, rb, prc, pri;
+            int pf, rc, ri, rb, prc, pri;
 
             /* Solicitar al usuario cantidad de respuestas correctas */
             Console.Write("Ingrese la cantidad de respuestas correctas: ");
